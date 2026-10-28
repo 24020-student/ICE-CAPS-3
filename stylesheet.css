@@ -1,0 +1,272 @@
+
+
+body{
+    background-color: #E1F9FF;
+    margin:0;
+}
+
+/* nav bar */
+.navbar {
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:70px;
+    background-color: #0383A9;
+}
+
+.nav-brand{
+    padding: 8px;
+
+}
+
+.nav{
+    display: flex;
+    justify-content:space-evenly;
+    width: 100%;
+}
+
+.nav-item{
+    list-style-type: none;
+    padding: 8px;
+
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 17px;
+    color:rgb(255, 255, 255)
+}
+
+.active{
+    background-color: #02607F;
+    color: white;
+}
+
+.nav-link:hover{
+    background-color: #02607F;
+    color: white;
+    transition:all 0.4s ease-in-out
+}
+
+/* generic centered div */
+.container-centered{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* homepage */
+.banner{
+    min-height:90vh;
+    background-size: cover;
+    background-position: center;
+    padding: 0 60px;
+}
+
+
+.banner-home{
+    background-image: linear-gradient(rgba(242, 239, 239, 0.5),
+     rgba(255, 255, 255, 0.5)), url("images/juan_mountain.jpg");
+}
+
+.banner-issue{
+    background-image: linear-gradient(rgba(242, 239, 239, 0.5),
+    rgba(255, 255, 255, 0.5)), url("images/issue_background.jpg");
+}
+
+.banner-act{
+    background-image: linear-gradient(rgba(242, 239, 239, 0.5),
+    rgba(255, 255, 255, 0.5)), url("images/act_background.jpg");
+}
+
+.banner-text{
+    text-align: center;
+    color:rgb(15, 14, 14);
+    padding: 80px 15px;
+}
+
+@media screen and (min-width: 580px){
+    .banner-text{
+        padding: 80px 25px;
+    }
+}
+
+@media screen and (min-width: 650px){
+    .banner-text{
+        padding: 80px 50px;
+    }
+}
+
+@media screen and (min-width: 700px){
+    .banner-text{
+        padding: 80px 75px;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .banner-text{
+        padding: 80px 100px;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .banner-text{
+        padding: 80px 125px;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .banner-text{
+        padding: 80px 150px;
+    }
+}
+
+@media screen and (min-width: 1100px){
+    .banner-text{
+        padding: 80px 175px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .banner-text{
+        padding: 80px 110px;
+    }
+}
+
+.banner-text h1{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    font-size: clamp(2rem, 7vw, 8rem);
+}
+
+
+.banner-text p{
+    font-family: 'Gabarito', sans-serif;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px 4vw;
+    font-size: clamp(2rem, 3vw, 4rem);
+}
+
+
+
+/* Photos with info */
+.photo{
+    width:70vw;
+    height:80vh;
+    padding:15vw;
+}
+
+
+/* photos on issue page*/
+.info-photos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5vw;
+}
+
+.set{
+    text-align: center;
+    position: relative;
+    width: 20vw;
+}
+
+.hover-img{
+    display:block;
+    height: auto;
+    /* filter: blur(2px); */
+    transition: 0.2s ease;
+}
+
+.hover-img img{
+    width:100%;
+    filter: blur(2px);
+}
+
+.hover-img img:hover{
+    filter:blur(0px);
+}
+
+.hover-text {
+    font-family: sans-serif;
+    color: #333;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.hover-img:hover ~ .hover-text{
+    visibility: visible;
+    opacity:1;
+}
+
+
+
+.set p{
+    font-size: clamp(0.8rem, 1.5vw, 2.5rem);
+}
+
+.set h2{
+    font-size: clamp(1rem, 2.5vw, 3rem);
+}
+
+
+
+
+/* oval with text */
+
+.parent{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.oval{
+    border-radius: 100%;
+    background-color: #02607F;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    min-height: 70vh;
+    margin-bottom: 20vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+
+.oval p{
+    color: white;
+    margin: 10vw;
+    font-size: 40px;
+}
+
+@media screen and (min-width: 580px) {
+    .oval p{
+        margin: 10vw;
+        font-size: 40px; 
+    }
+}
+
+
+/* footer */
+.footer{
+    border-top: solid rgb(100, 100, 100) 4px;
+    text-align: center;
+    font-family: 'Gabarito', sans-serif;
+    background-color: #0a7295;
+}
+
+
+.footer a{
+    text-decoration: none;
+    color: rgb(40, 34, 227);
+}
+
+.footer a:hover{
+    color: rgb(135, 156, 247)
+}
